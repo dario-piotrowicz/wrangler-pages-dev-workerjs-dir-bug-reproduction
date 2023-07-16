@@ -1,0 +1,16 @@
+{
+  "name": "wrangler-issue-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "wrangler pages dev build",
+    "build": "rm -rf ./build && sleep 1 && mkdir -p ./build && cp ./src/my-worker.js ./build/_worker.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "wrangler": "^3.2.0"
+  }
+}
