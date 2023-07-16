@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "wrangler pages dev build",
-    "build": "rm -rf ./build && sleep 5 && mkdir -p ./build/_worker.js && cp ./src/my-worker.js ./build/_worker.js/index.js",
+    "dev-dir": "wrangler pages dev build-dir",
+    "build": "rm -rf ./build && mkdir -p ./build && cp ./src/my-worker.js ./build/_worker.js",
+    "build-dir": "rm -rf ./build-dir && mkdir -p ./build-dir/_worker.js && cp ./src/my-worker.js ./build-dir/_worker.js/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
